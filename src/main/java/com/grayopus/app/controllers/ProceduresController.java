@@ -75,9 +75,9 @@ public class ProceduresController {
 	}
 	 	 
 	@PostMapping("/add")
-	public Procedures add(@Valid @RequestBody Procedures product) throws ParseException {
+	public Procedures add(@Valid @RequestBody Procedures procedure) throws ParseException {
 		
-		Procedures savedE = service.save(product);
+		Procedures savedE = service.save(procedure);
 		LOGGER.info("Saved successfully ID:"+savedE.getId());
 		return savedE;
 	}
@@ -95,9 +95,8 @@ public class ProceduresController {
 		
 		service.delete(id);
 		Map<String, Boolean> response = new HashMap<>();
-		response.put("Deleted successfully, Balance ID:"+id, Boolean.TRUE);
-		LOGGER.info("Deleted successfully, Balance ID:"+id);
+		response.put("Deleted successfully, Procedures ID:"+id, Boolean.TRUE);
+		LOGGER.info("Deleted successfully, Procedures ID:"+id);
 		return response;
-		
-	}	
+	}
 }

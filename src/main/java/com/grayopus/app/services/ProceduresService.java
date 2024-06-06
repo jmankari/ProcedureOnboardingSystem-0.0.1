@@ -3,7 +3,7 @@ package com.grayopus.app.services;
 import java.util.List;
 import java.util.Optional;
 
-import com.grayopus.app.models.*;
+import com.grayopus.app.models.Procedures;
 
 public interface ProceduresService {
 

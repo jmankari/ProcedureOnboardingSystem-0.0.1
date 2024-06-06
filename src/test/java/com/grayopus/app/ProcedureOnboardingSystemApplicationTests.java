@@ -1,11 +1,19 @@
-package com.grayopus.procedure;
+package com.grayopus.app;
 
-import org.springframework.boot.test.context.SpringBootTest;
+import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
-@SpringBootTest
-class ProcedureOnboardingSystemApplicationTests {
-
-	/*
-	 * @Test void contextLoads() { }
+/**
+ * Unit test for simple app.
+ */
+public class ProcedureOnboardingSystemApplicationTests
+{
+	/**
+	 * Rigorous Test :-)
 	 */
+	@Test
+	public void shouldAnswerWithTrue()
+	{
+		assertTrue( true );
+	}
 }
